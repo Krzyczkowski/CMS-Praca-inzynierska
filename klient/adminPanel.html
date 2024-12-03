@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Creator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/adminPanel.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/contentGenerator.css">
+</head>
+<body>
+    <div id="myModal" class="modal">
+        
+        <div class="modal-container">
+            <span class="close">&times;</span>
+            <div class="modal-contents"></div>
+   
+        </div>
+    </div>
+    <div class="mainContainer">
+        
+        
+        <h3 id="welcomeMessage"></h3>
+        <nav>
+            
+            <button id="mainPanel"><h1>Admin Panel</h1></button><br>
+            <img src="img/user-icon.png">
+            <button class="navButton" id="websiteCreatorBtn">Website Creator</button><br>
+            <button class="navButton" id="websiteEditorBtn">Website Editor</button><br>
+            <button class="navButton" id="contentGeneratorBtn">Content Panel</button><br>
+            <button class="navButton" id="usersPanelBtn">Users Panel</button><br>
+            <button class="navButton" id="loginPanelBtn">Log out</button>
+        </nav>
+        <main>
+
+        </main>
+        <script type="module" src="scripts/adminPanel/navScripts.js"></script>
+        <script type="module" src="scripts/adminPanel/adminPanel.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<div id="allProductsFragment">
+    <h1>Wszystkie obiekty typu: [[${type}]]</h1>
+    <div th:each="content : ${allContents}">
+        <div class="singleContent">
+            <b><span th:text="'Title: ' + ${content.title}"></span></b>
+            <br>
+            <span th:text="'Description: ' + ${content.description}"></span>
+            <br>
+            <span th:text="'Price: ' + ${content.price}"></span>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>

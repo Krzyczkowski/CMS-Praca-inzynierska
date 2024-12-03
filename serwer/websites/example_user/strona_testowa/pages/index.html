@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+    <html lang="pl">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapisana Strona</title>
+    <style>
+      body {
+        margin: 0 auto; 
+        display:flex;
+        flex-direction: column;
+        max-width:100%;
+      }
+
+    </style>
+    </head>
+    <body><div style="color: rgb(0, 0, 0); width: 100%; min-width: 10px; background-color: rgb(128, 0, 255); font-size: 16px; font-family: Arial, sans-serif; position: relative; border-width: 1px; border-color: rgb(0, 0, 0); border-radius: 0px; opacity: 1; box-sizing: border-box; margin: 0px 0%; padding: 0px 0% 18px; display: flex; flex-flow: column wrap; overflow: auto; overflow-wrap: break-word; min-height: 4px; align-items: center; justify-content: center; z-index: 1;" class="draggable" draggable="false"><p style="color: rgb(255, 255, 255); width: auto; min-width: 10px; background-color: rgb(128, 0, 255); font-size: 80px; font-family: Impact; position: relative; border-width: 1px; border-color: rgb(0, 0, 0); border-radius: 0px; opacity: 1; box-sizing: border-box; margin: 0px 0%; padding: 0px 0%; display: block; flex-flow: column wrap; overflow: hidden; overflow-wrap: break-word; min-height: 10px; justify-content: center; align-items: center; text-align: center; z-index: 1;" class="draggable" draggable="false">Katalog drzew<br class="draggable" draggable="false" style="width: 0%; margin-right: 0.339842%; margin-left: 0.339842%; padding-right: 6.17859%; padding-left: 6.17859%; z-index: 1;"></p></div>
+
+
+
+
+
+    <div style="color: rgb(255, 255, 255); width: 100%; min-width: 10px; background-color: rgb(0, 0, 0); font-size: 16px; font-family: Arial, sans-serif; position: relative; border-width: 1px; border-color: rgb(0, 0, 0); border-radius: 0px; opacity: 1; box-sizing: border-box; margin: 0px 0%; padding: 10px 0.325521%; display: flex; flex-flow: wrap; overflow: auto; overflow-wrap: break-word; min-height: 44px; align-items: center; justify-content: flex-start; z-index: 1;" class="draggable" draggable="false"><div style="color: rgb(255, 255, 255); width: 55.5339%; min-width: 10px; background-color: rgb(0, 0, 0); font-size: 16px; font-family: Arial, sans-serif; position: relative; border-width: 1px; border-color: rgb(0, 0, 0); border-radius: 0px; opacity: 1; box-sizing: border-box; margin: 5px 0%; padding: 5px 0.296224%; display: flex; flex-flow: wrap; overflow: auto; overflow-wrap: break-word; min-height: auto; align-items: center; justify-content: flex-end; z-index: 1;" class="draggable" draggable="false"><p style="color: rgb(255, 255, 255); width: auto; min-width: 10px; background-color: rgb(0, 0, 0); font-size: 25px; font-family: Impact; position: relative; border-width: 1px; border-color: rgb(0, 0, 0); border-radius: 0px; opacity: 1; box-sizing: border-box; margin: 0px 0.726846% 0px 0%; padding: 0px 1.98515% 0px 0%; display: block; flex-flow: column wrap; overflow: hidden; overflow-wrap: break-word; min-height: 10px; z-index: 1;" class="draggable" draggable="false">Wyszukaj drzewo:<br class="draggable" draggable="false" style="width: 0%; margin-right: 0.277778%; margin-left: 0.277778%; padding-right: 5.08419%; padding-left: 5.08419%; z-index: 1;"></p><input type="text" style="color: rgb(0, 0, 0); width: auto; min-width: 10px; background-color: rgb(252, 252, 252); font-size: 16px; font-family: Impact; position: relative; border-width: 1px; border-color: rgb(0, 0, 0); border-radius: 5px; opacity: 1; box-sizing: border-box; margin: 0px 0%; padding: 10px 5px; display: block; flex-flow: column wrap; overflow: hidden; overflow-wrap: break-word; min-height: 10px; z-index: 1;" class="draggable selectedVar-title" draggable="false" id="searchBar" onchange="searchContent()"></div><div style="color: rgb(0, 0, 0); width: 37.1745%; min-width: 10px; background-color: rgb(0, 0, 0); font-size: 16px; font-family: Arial, sans-serif; position: relative; border-width: 1px; border-color: rgb(0, 0, 0); border-radius: 0px; opacity: 1; box-sizing: border-box; margin: 5px 0%; padding: 5px 0.296224%; display: flex; flex-flow: wrap; overflow: auto; overflow-wrap: break-word; min-height: auto; align-items: center; justify-content: flex-end; z-index: 1;" class="draggable" draggable="false"></div></div><div style="color: rgb(0, 0, 0); width: auto; min-width: 10px; background-color: rgb(223, 223, 223); font-size: 16px; font-family: Arial, sans-serif; position: relative; border-width: 1px; border-color: rgb(0, 0, 0); border-radius: 0px; opacity: 1; box-sizing: border-box; margin: 0px 0%; padding: 15px 0% 20px 0.195313%; display: flex; flex-flow: wrap; overflow: auto; overflow-wrap: break-word; min-height: 100px; align-items: start; z-index: 1; justify-content: center; text-align: center;" class="draggable max-4" draggable="false" id="contentSection"><div style="color: rgb(0, 0, 0); width: 27.3438%; min-width: 10px; background-color: rgb(255, 255, 255); font-size: 16px; font-family: Arial, sans-serif; position: relative; border-width: 1px; border-color: rgb(0, 0, 0); border-radius: 7px; opacity: 1; box-sizing: border-box; margin: 5px; padding: 0px; display: flex; flex-flow: column wrap; overflow: auto; overflow-wrap: break-word; min-height: 435px; align-items: center; border-style: solid; z-index: 1; box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 0px; justify-content: center;" class="draggable" draggable="false" id="contentTemplateBlock"><p style="color: rgb(152, 1, 252); width: 99.5616%; min-width: 10px; background-color: rgb(135, 254, 194); font-size: 37px; font-family: Impact; position: relative; border-width: 1px; border-color: rgb(0, 0, 0); border-radius: 0px; opacity: 1; box-sizing: border-box; margin: 0px; padding: 5px 0px; display: block; flex-flow: column wrap; overflow: hidden; overflow-wrap: break-word; min-height: 59px; z-index: 1;" class="draggable var-title" draggable="false">$title</p><p style="color: rgb(0, 0, 0); width: 51.41%; min-width: 10px; background-color: rgb(255, 255, 255); font-size: 16px; font-family: Arial, sans-serif; position: relative; border-width: 2px; border-color: rgb(165, 165, 165); border-radius: 5px; opacity: 1; box-sizing: border-box; margin: 4px 0% 0px; padding: 0px 0%; display: block; flex-flow: column wrap; overflow: hidden; overflow-wrap: break-word; min-height: 300px; z-index: 1; border-style: solid;" class="draggable var-image" draggable="false">$image</p><p style="color: rgb(0, 0, 0); width: 72.0255%; min-width: 10px; background-color: rgb(239, 239, 239); font-size: 22px; font-family: Arial, sans-serif; position: relative; border-width: 1px; border-color: rgb(0, 0, 0); border-radius: 9px; opacity: 1; box-sizing: border-box; margin: 18px 0% 10px; padding: 15px 3.28996%; display: block; flex-flow: column wrap; overflow: hidden; overflow-wrap: break-word; min-height: 158px; z-index: 1; text-align: left;" class="draggable var-description" draggable="false">$description</p></div></div><div style="color: rgb(0, 0, 0); width: auto; min-width: 10px; background-color: rgb(13, 255, 152); font-size: 16px; font-family: Arial, sans-serif; position: relative; border-width: 1px; border-color: rgb(0, 0, 0); border-radius: 0px; opacity: 1; box-sizing: border-box; margin: 0px 0%; padding: 5px 0.325521%; display: flex; flex-flow: wrap; overflow: auto; overflow-wrap: break-word; min-height: 100px; align-items: center; justify-content: center; z-index: 1;" class="draggable" draggable="false"><p style="color: rgb(0, 0, 0); width: auto; min-width: 10px; background-color: rgb(255, 255, 255); font-size: 25px; font-family: Impact; position: relative; border-width: 5px; border-color: rgb(0, 0, 0); border-radius: 5px; opacity: 1; box-sizing: border-box; margin: 0px 0.825736% 0px 0%; padding: 5px 0.885417%; display: block; flex-flow: column wrap; overflow: hidden; overflow-wrap: break-word; min-height: 10px; justify-content: center; height: auto; border-style: solid; z-index: 1;" class="draggable" draggable="false" onclick="previousPageCall()">poprzednia strona<br class="draggable" draggable="false" style="width: 0%; margin-right: 0.0373692%; margin-left: 0.0373692%; padding-right: 0.896861%; padding-left: 0.896861%; z-index: 1;"></p><p style="color: rgb(0, 0, 0); width: auto; min-width: 10px; background-color: rgb(255, 255, 255); font-size: 25px; font-family: Impact; position: relative; border-width: 5px; border-color: rgb(0, 0, 0); border-radius: 5px; opacity: 1; box-sizing: border-box; margin: 0px 0%; padding: 5px 0.885417%; display: block; flex-flow: column wrap; overflow: hidden; overflow-wrap: break-word; min-height: 10px; justify-content: center; height: auto; border-style: solid; z-index: 1;" class="draggable" draggable="false" onclick="nextPageCall()">następna strona<br class="draggable" draggable="false" style="width: 0%; margin-right: 0.0245098%; margin-left: 0.0245098%; padding-right: 0.800652%; padding-left: 0.800652%; z-index: 1;"></p></div><div style="color: rgb(0, 0, 0); width: 100%; min-width: 10px; background-color: rgb(0, 0, 0); font-size: 16px; font-family: Arial, sans-serif; position: relative; border-width: 1px; border-color: rgb(0, 0, 0); border-radius: 0px; opacity: 1; box-sizing: border-box; margin: 0px 0%; padding: 0px 0%; display: flex; flex-flow: column wrap; overflow: auto; overflow-wrap: break-word; min-height: 134px; align-items: center; text-align: center; justify-content: center; z-index: 1;" class="draggable" draggable="false"><p style="color: rgb(255, 255, 255); width: auto; min-width: 10px; background-color: rgb(0, 0, 0); font-size: 35px; font-family: Impact; position: relative; border-width: 1px; border-color: rgb(0, 0, 0); border-radius: 0px; opacity: 1; box-sizing: border-box; margin: 0px 0%; padding: 0px 0%; display: block; flex-flow: column wrap; overflow: hidden; overflow-wrap: break-word; min-height: 10px; z-index: 1;" class="draggable" draggable="false">Copyright 2024<br class="draggable" draggable="false" style="width: 0%; margin-right: 0.350076%; margin-left: 0.350076%; padding-right: 6.59055%; padding-left: 6.59055%; z-index: 1;"></p></div>
+
+
+
+    
+    </body>
+    <script>
+
+    let author = "username";
+    let address = "http://localhost:8080";
+    let websiteName = "strona_testowa";
+    let maxContentPerPage = 10;
+    let currentPage = 1;
+    let contentList = [];
+    let actualContentList = []; // lista na obiekty aktualne do obsługi searchingu
+    let number = 10; 
+    let blockTemplate, templateCopy;
+    let blockTemplateDisplay;
+    let commentShowSchema;
+    
+    async function getAllContent() {
+      try {
+        const query = address + '/public/content/' + author + '/' + websiteName;
+        const response = await fetch(query, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json"
+          }
+        });
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const contents = await response.json();
+        return contents;
+      } catch (error) {
+        console.error('An error occurred:', error);
+        return [];
+      }
+    }
+    async function getAllComments(contentId) {
+      try {
+        const query = address + '/comment/all/' + websiteName + '/' + contentId;
+        const response = await fetch(query, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json"
+          }
+        });
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const comments = await response.json();
+        return comments;
+      } catch (error) {
+        console.error('An error occurred:', error);
+        return [];
+      }
+    }
+    async function renderPage(pageNumber) {
+      let contentSection = document.querySelector('#contentSection');
+      let schema = contentList[0].schema;
+      contentSection.innerHTML = '';
+    
+      const start = (pageNumber - 1) * maxContentPerPage;
+      const end = start + maxContentPerPage;
+      const pageContents = actualContentList.slice(start, end); //ograniczenie elementow dla danej strony
+    
+      for (const content of pageContents) {
+          let templateCopy = blockTemplate.cloneNode(true);
+          templateCopy.removeAttribute('id');
+    
+          let commentSchema = templateCopy.querySelector(".commentSendSchema");
+        if (commentSchema) {
+            let sendButton = commentSchema.querySelector("#sendComment");
+            let deleteButton = commentSchema.querySelector("#deleteComment");
+            let commentTextSection = commentSchema.querySelector("#commentTextSection");
+
+            if (sendButton) {
+                sendButton.setAttribute("onclick", "sendComment(" + content['id'] + ")");
+            }
+            if (deleteButton) {
+                deleteButton.setAttribute("contentId", content['id']);
+            }
+            if (commentTextSection) {
+                commentTextSection.setAttribute("textCommentContentId", content['id']);
+            }
+        }
+    
+          Object.keys(schema).forEach(key => {
+              let templateItems = templateCopy.querySelectorAll(".var-" + key);
+              if (templateItems.length > 0) {
+                  templateItems.forEach(templateItem => {
+                      if (schema[key] === 'byte[]' && content[key]) {
+                          let img = new Image();
+                          img.src = 'data:image/jpeg;base64,' + content[key];
+                          img.style.cssText = templateItem.style.cssText;
+                          templateItem.parentNode.replaceChild(img, templateItem);
+                      } else {
+                          templateItem.textContent = content[key];
+                      }
+                  });
+              }
+          });
+          contentSection.appendChild(templateCopy);
+
+          // KOMENTARZE 
+          let allCommentsContainer = templateCopy.querySelector("#allCommentsContainer");
+          if (!allCommentsContainer) {
+            console.error('allCommentsContainer element not found');
+            continue; 
+          }
+          let oneCommentSchema = allCommentsContainer.querySelector(".commentShowSchema");
+          if (!oneCommentSchema) {
+            console.error('oneCommentSchema element not found');
+            continue; 
+          }
+          commentShowSchema = oneCommentSchema.cloneNode(true);
+          await generateCommentsForContent(content['id'], commentShowSchema ,allCommentsContainer);
+          oneCommentSchema.style.display="none";
+        
+      };
+    }
+    async function generateCommentsForContent(contentId, commentBlock, container) {
+
+      container.setAttribute('commentcontainerid',contentId);
+      const comments = await getAllComments(contentId); // Pobierz komentarze dla contentId
+      if(comments.length>0){
+        if(container.style.display=="none")
+          container.style.display="flex";
+        clearCommentContainer(contentId);
+        comments.forEach(comment => {
+          let clonedSchema = commentBlock.cloneNode(true);
+          let userNameBlock = clonedSchema .querySelector("#userNameCommentBlock");
+          let commentSection = clonedSchema .querySelector("#commentTextSection");
+          userNameBlock.innerHTML = comment.author; // Ustawiamy username komentarza
+          commentSection.innerHTML = comment.text; // Ustawiamy tekst komentarza
+      
+          container.appendChild(clonedSchema); // Dodajemy sklonowany i wypełniony komentarz do bloku treści
+        });
+      }
+      else
+        container.style.display="none";
+
+    }
+    
+    document.addEventListener("DOMContentLoaded", async function () {
+      const startTime = performance.now();
+      blockTemplate = document.querySelector('#contentTemplateBlock');
+    
+      let paginator = document.querySelector("#contentSection");
+      let number = 10; // Domyślna wartość, jeśli klasa nie zostanie znaleziona
+    
+      if (paginator) {
+          let matchedClass = [...paginator.classList].find(cl => /max-(\d+)/.test(cl));
+          console.log(matchedClass);
+          if (matchedClass) {
+              let match = matchedClass.match(/max-(\d+)/);
+
+              if (match && match[1]) {
+                  number = parseInt(match[1], 10);
+              }
+          }
+      }
+      maxContentPerPage = number;
+      
+      if (blockTemplate) {
+          contentList = await getAllContent();
+          if (contentList) {
+              actualContentList = contentList;
+              await renderPage(currentPage);
+              await preparePaginator();
+          } else {
+              console.error("Nie udało się pobrać listy treści.");
+          }
+      } else {
+          console.error("Nie znaleziono szablonu treści.");
+      }
+      
+      // Raportowanie czasu ładowania, jeśli wszystko poszło dobrze
+      raportLoadingTime(startTime);
+    
+    });
+    
+    async function preparePaginator(){
+      async function nextPageCall(){
+        if (currentPage * maxContentPerPage < actualContentList.length) {
+          currentPage++;
+          await renderPage(currentPage);
+        }
+      }
+      window.nextPageCall = nextPageCall;
+    
+      async function previousPageCall(){
+        if (currentPage > 1) {
+          currentPage--;
+          await renderPage(currentPage);
+        }
+      }
+      window.previousPageCall = previousPageCall;
+    }
+    preparePaginator();
+    
+    async function searchContent() {
+      let searchBar = document.querySelector('#searchBar');
+      let searchText = searchBar.value.toLowerCase(); 
+      let searchingTypeVar = extractVariableNameFromElement(searchBar);
+    
+      if (searchText == '') {
+        actualContentList = contentList;
+      } else if (searchingTypeVar) {
+        actualContentList = contentList.filter(content => {
+          return content[searchingTypeVar] && content[searchingTypeVar].toLowerCase().startsWith(searchText);
+        });
+      }
+    
+      currentPage = 1;
+      await renderPage(currentPage);
+    }
+    
+    window.searchContent = searchContent;
+    
+    function extractVariableNameFromElement(element) {
+      for (let className of element.classList) {
+        let match = className.match(/^selectedVar-(.+)/);
+        if (match) {
+          return match[1]; 
+        }
+      }
+      return null; 
+    }
+    function elementOnClickScript(link){
+      if(link.startsWith("internal:")){
+        link = link.slice(9) + '.html';
+        var currentUrl = window.location.href;
+        var parts = currentUrl.split('/');
+        parts[parts.length - 1] = link;
+        var newUrl = parts.join('/');
+        window.location.href = newUrl;
+      }else{
+      window.location.href = link;
+      }
+    }
+    function raportLoadingTime(startTime){
+      const loadTime = performance.now() - startTime;
+      console.log("czas wczytywania to " + loadTime);
+      // Wysyłanie danych do serwera
+      fetch('/public/report-loading-time', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ websiteName: websiteName, loadTime: loadTime })
+      }).then(response => {
+          if (response.ok) {
+              console.log("Czas ładowania wysłany pomyślnie");
+          } else {
+              console.error("Nie udało się wysłać czasu ładowania");
+          }
+      });
+    
+    }
+    function usersRegisterUser() {
+      const regUsername = document.getElementById('regusername').value;
+      const regPassword = document.getElementById('regpassword').value;
+      const email = document.getElementById('email').value;
+      const wiek = parseInt(document.getElementById('wiek').value);
+      const websiteAuthor = author;
+      fetch('http://localhost:8080/register', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ username: regUsername, password: regPassword, email, wiek, websiteAuthor, websiteName}),
+      })
+      .then(response => {
+          if (response.ok) {
+              return response.text();
+          } else {
+              throw new Error('Failed to register');
+          }
+      })
+      .then(data => {
+          alert('User registered successfully');
+      })
+      .catch(error => {
+          alert('Error: ' + error.message);
+      });
+    }
+    window.usersRegisterUser = usersRegisterUser;
+    
+    function usersLoginUser() {
+      const username = document.getElementById('logusername').value;
+      const password = document.getElementById('logpassword').value;
+      const loginButton = document.getElementById('login-submit');
+      const redirect = loginButton.getAttribute("redirect");
+      fetch('http://localhost:8080/authenticate', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ username, password }),
+      })
+      .then(response => {
+          if (response.ok) {
+              return response.json();
+          } else {
+              throw new Error('Failed to login');
+          }
+      })
+      .then(data => {
+          localStorage.setItem('userJwtToken', data.jwtToken);
+          const currentPath = window.location.pathname.split('/');
+          currentPath[currentPath.length - 1] = redirect + '.html';
+          const newPath = currentPath.join('/');
+    
+          window.location.href = window.location.origin + newPath;
+      })
+      .catch(error => {
+          alert('Error: ' + error.message);
+      });
+      }
+      window.usersLoginUser = usersLoginUser;
+    
+    
+      // USER SCRIPTS (API CALLS WITH JWT TOKEN AFTER LOGIN)
+      
+      
+      function authorizedFetch(url, options = {}) {
+          const jwtToken = localStorage.getItem('userJwtToken');
+          if (!jwtToken) {
+            alert("You are not logged in.");
+            return; // Exit the function if no JWT token is found
+          }
+          options.headers = options.headers || {};
+          options.headers['Authorization'] = 'Bearer ' + jwtToken;
+          options.headers['Content-Type'] = 'application/json';
+          return fetch(url, options);
+      }
+    
+      async function createComment(websiteName, contentId, text) {
+        let websiteAuthor = author;
+          let payload = {
+              websiteAuthor,
+              websiteName,
+              contentId,
+              text
+          };
+    
+          try {
+            const response = await authorizedFetch('http://localhost:8080/comment/add', {
+              method: "POST",
+              body: JSON.stringify(payload)
+            });
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
+            const data = await response.json();
+            return data;
+          } catch (error) {
+            console.error("An error occurred:", error);
+            return [];
+          }
+      }
+    
+      async function sendComment(contentId){
+        let commentTextArea = document.querySelector('[textCommentContentId="' + contentId + '"]');
+        let text = commentTextArea ? commentTextArea.value : '';
+        try {
+          let returnval = await createComment(websiteName, contentId, text);
+          console.log(returnval)
+          let commentsContainer = document.querySelector('[commentcontainerid="' + contentId + '"]');
+          await generateCommentsForContent(contentId, commentShowSchema, commentsContainer);
+        } catch (error) {
+          console.error("An error occurred while sending a comment:", error);
+        }
+      }
+      window.sendComment = sendComment;
+
+      function clearCommentContainer(contentId){
+        let commentsContainer = document.querySelector('[commentcontainerid="' + contentId + '"]');
+        if(commentsContainer){
+        let commentElements = commentsContainer.querySelectorAll(".commentShowSchema");
+
+        commentElements.forEach(commentElement => {
+          commentElement.remove(); // Usunięcie każdego elementu komentarza
+        });
+      }
+      }
+     
+    
+
+    </script>
+    </html>

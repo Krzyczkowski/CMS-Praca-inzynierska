@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    
+    <link  rel="stylesheet" href="styles/loginRegisterPanel.css" >
+</head>
+<body>
+    <div class="allContainer">
+        
+            
+        <form id="loginForm">
+            <h1>Login</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+    
+            <input type="submit" value="Login">
+        </form>
+
+        <form id="registerForm">
+            <h1>Register</h1>
+            <label for="regUsername">Username:</label>
+            <input type="text" id="regUsername" name="regUsername" required>
+            <label for="regPassword">Password:</label>
+            <input type="password" id="regPassword" name="regPassword" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="wiek">Age:</label>
+            <input type="number" id="wiek" name="wiek" required>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
